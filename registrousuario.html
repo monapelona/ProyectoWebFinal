@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Registrar Nuevo Usuario</title>
+<link rel="stylesheet" type="text/css" href="styles/Styles.css">
+<script type="text/javascript" src="Javascript/validacion.js"></script>
+</head>
+<body background="images/personacompu.jpg">
+ <h1>Registrar nuevo usuario</h1>
+  <center> 
+		<div id="registro">
+			<form method="post" action="PHP/registrousuario.php" id="login" name="login">
+			<p>Usuario: </br><input type="text" id="usuario" name="usuario" required onkeyup="validarusuario()"> <label id="errorusuario"></label></p> 
+        <p>Password: </br><input type="password" id="password" name="password" required onkeyup="validarpassword()"><label id="errorpassword"></label></p>
+			<p>El ususario debe ser un correo electronico</p>
+	     <p> Confirmar password: <input type="password" id="password2" name="password2" onkeyup="mismopassword()"><label id="errorpassword2"></label></p>
+			</div>
+ 		<!--<button type="button" onClick="validar();">Enviar</button>-->
+        <input type="submit" name="login" onclick="validar()" value="enviar">
+	</center>
+  <div id="menu">
+  
+    <ul class="nav">
+        <li><a href="index.php">Home</a></li>
+        <li><a href="nosotros.php">Quienes somos</a></li>
+        <li><a href="materias.php">Lista de materias</a></li>
+        <li><a href="loginusuario.html">Log In</a></li>
+        <li><a href="descargas.php">Descargas</a></li>
+        <li><a href="contacto.php">Contacto</a></li>
+      </ul>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!--Vanessa Martínez Romero 160300006
+  Jorge David Oregón Baltazar 160300117-->
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <title>Registro de usuario</title>
+    <link rel="stylesheet" type="text/css" href="styles/Styles.css">
+  	<script type="text/javascript" src="Javascript/gallery.js"></script>
+	  <script type="text/javascript" src="Javascript/validacion.js"></script>
+  <meta charset="utf-8">
+  </head>
+	<body background="images/personacompu.jpg"> 
+		<!--<div id="Login">-->
+	<h1>Log In</h1>
+     <h2>Si ya tienes usuario entra aqui</h2>
+<!--<form name=form action="seccion4.html">-->
+	<center> 
+		<div id="registro">
+			<form method="post" action="PHP/loginusuario.php" id="login" name="login">
+			<p>Usuario: </br><input type="text" id="usuario" name="usuario" required onkeyup="validarusuario()"> <label id="errorusuario"></label></p> 
+        <p>Password: </br><input type="password" id="password" name="password" required onkeyup="validarpassword()"><label id="errorpassword"></label></p>
+			<p>El ususario debe ser un correo electronico</p>
+	     <p> Confirmar password: <input type="password" id="password2" name="password2" onkeyup="mismopassword()"><label id="errorpassword2"></label></p>
+			</div>
+ 		<!--<button type="button" onClick="validar();">Enviar</button>-->
+        <input type="button" name="login" onclick="validar()" value="enviar">
+	</center>
+  
+   <a href="registrousuario.html">Registrate Aqui</a>
+    
+    </br>
+    </br>
+  
+<input type="button" value="Back" onclick="goBack()">
+<br/> 
+  	 <p id="demo"></p>
+  <script>
+   document.getElementById("demo").innerHTML = Date();
+    </script>
+
+    <p id="a2"></p>
+    <script>
+     document.getElementById("a2").innerHTML = 
+    "El URL de este sitio es:<br>" + window.location.href;
+</script>
+<div id="menu">
+    <ul class="nav">
+        <li><a href="index.php">Home</a></li>
+        <li><a href="nosotros.php">Quienes somos</a></li>
+        <li><a href="materias.php">Lista de materias</a></li>
+        <li><a href="loginusuario.html">Log In</a></li>
+        <li><a href="descargas.php">Descargas</a></li>
+        <li><a href="contacto.php">Contacto</a></li>
+      </ul>
+    </div>
+	</body>
+			</html>
+  	
+  
